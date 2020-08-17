@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Case\Data\" />
+    <Folder Include="Areas\Case\Models\" />
+    <Folder Include="Areas\Depot\Controllers\" />
+    <Folder Include="Areas\Depot\Data\" />
+    <Folder Include="Areas\Depot\Models\" />
+    <Folder Include="Areas\Depot\Views\" />
+    <Folder Include="Areas\Manager\Data\" />
+    <Folder Include="Areas\Mobile\Controllers\" />
+    <Folder Include="Areas\Mobile\Data\" />
+    <Folder Include="Areas\Mobile\Models\" />
+    <Folder Include="Areas\Mobile\Views\" />
+    <Folder Include="Areas\SalesMan\Controllers\" />
+    <Folder Include="Areas\SalesMan\Data\" />
+    <Folder Include="Areas\SalesMan\Models\" />
+    <Folder Include="Areas\SalesMan\Views\" />
+    <Folder Include="Areas\Service\Controllers\" />
+    <Folder Include="Areas\Service\Data\" />
+    <Folder Include="Areas\Service\Models\" />
+    <Folder Include="Areas\Service\Views\" />
+  </ItemGroup>
+
+</Project>
